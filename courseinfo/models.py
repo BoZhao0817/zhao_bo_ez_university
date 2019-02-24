@@ -71,6 +71,7 @@ class Section(models.Model):
     section_name = models.CharField(max_length=10)
     semester = models.ForeignKey(Semester, related_name='sections', on_delete=models.PROTECT)
     course = models.ForeignKey(Course, related_name='sections', on_delete=models.PROTECT)
+    #instructor foreig key
     instructor = models.ForeignKey(Instructor, related_name='sections', on_delete=models.PROTECT)
     #why related name = sections view the object? other side?
 
@@ -83,7 +84,7 @@ class Section(models.Model):
 class Registration(models.Model):
     registration_id = models.AutoField(primary_key=True)
     student = models.ForeignKey(Student, related_name='registrations', on_delete=models.PROTECT)
-    section = models.ForeignKey(Section, related_name='registration', on_delete=models.PROTECT)
+    section = models.ForeignKey(Section, related_name='registrations', on_delete=models.PROTECT)
 
 
     def __str__(self):
