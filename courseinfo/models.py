@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 # Create your models here.
@@ -11,6 +12,11 @@ class Semester(models.Model):
     def __str__(self):
         return '%s' % self.semester_name
         #'%s' single string
+
+    def get_absolute_url(self):
+        return reverse('courseinfo_semester_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
 
     class Meta:
         ordering = ['semester_name']
@@ -25,6 +31,15 @@ class Course(models.Model):
     def __str__(self):
         return '%s - %s' % (self.course_number, self.course_name)
         #overwrite the original one is object 1,2,3
+
+    def get_absolute_url(self):
+        return reverse('courseinfo_course_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
+
+
+
+
     #internal class
     class Meta:
         # display by its course num
@@ -41,9 +56,16 @@ class Instructor(models.Model):
     def __str__(self):
         return '%s, %s' % (self.last_name, self.first_name)
 
+    def get_absolute_url(self):
+        return reverse('courseinfo_instructor_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
+
+
     class Meta:
         ordering = ['last_name', 'first_name']
         unique_together = (('last_name','first_name'),)
+
 
 class Student(models.Model):
     student_id = models.AutoField(primary_key=True)
@@ -60,6 +82,11 @@ class Student(models.Model):
         else:
             result = '%s, %s (%s)' % (self.last_name, self.first_name, self.nickname)
         return result
+    
+    def get_absolute_url(self):
+        return reverse('courseinfo_student_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
 
     class Meta:
         ordering = ['last_name', 'first_name', 'nickname']
@@ -78,6 +105,12 @@ class Section(models.Model):
     def __str__(self):
         return '%s - %s (%s)' % (self.course.course_number, self.section_name, self.semester.semester_name)
 
+    def get_absolute_url(self):
+        return reverse('courseinfo_section_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
+
+
     class Meta:
         ordering = ['course__course_number','section_name', 'semester__semester_name']
 
@@ -90,11 +123,19 @@ class Registration(models.Model):
     def __str__(self):
         return '%s / %s' % (self.section, self.student)
 
+    def get_absolute_url(self):
+        return reverse('courseinfo_registration_detail_urlpattern',
+                       kwargs={'pk':self.pk}
+                       )
+
     class Meta:
         ordering = ['section', 'student']
         #only can register one time in one course
         unique_together = (('section', 'student'),)
 #run migrate build database table that related to models.py
+
+
+
 
 
 

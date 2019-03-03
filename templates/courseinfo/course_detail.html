@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <th>Course Name:</th>
-                <td><a href="">{{ course.course_name }}</a></td>
+                <td><a href="{{ course.get_absolute_url }}">{{ course.course_name }}</a></td>
             </tr>
         </table>
 
@@ -26,7 +26,7 @@
         <ul>
             {% for section in section_list %}
                 <li>
-                    <a href="">{{ section }}</a>
+                    <a href="{{ section.get_absolute_url }}">{{ section }}</a>
                 </li>
             {% empty %}
                 <li><em>There are currently no sections for this courses.</em></li>
