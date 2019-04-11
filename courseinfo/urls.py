@@ -8,6 +8,7 @@ from courseinfo.views import (
     RegistrationList,
     InstructorDetail,
     InstructorUpdate,
+    InstructorDelete,
     SectionDetail,
     StudentDetail,
     CourseDetail,
@@ -16,14 +17,19 @@ from courseinfo.views import (
     InstructorCreate,
     SectionCreate,
     SectionUpdate,
+    SectionDelete,
     CourseCreate,
     CourseUpdate,
+    CourseDelete,
     SemesterCreate,
     SemesterUpdate,
+    SemesterDelete,
     StudentCreate,
     StudentUpdate,
+    StudentDelete,
     RegistrationCreate,
     RegistrationUpdate,
+    RegistrationDelete,
 )
 
 urlpatterns = [
@@ -47,6 +53,10 @@ urlpatterns = [
          InstructorUpdate.as_view(),
          name='courseinfo_instructor_update_urlpattern'),
 
+    path('instructor/<int:pk>/delete/',
+         InstructorDelete.as_view(),
+         name='courseinfo_instructor_delete_urlpattern'),
+
     path('section/',
          SectionList.as_view(),
          name='courseinfo_section_list_urlpattern'),
@@ -62,6 +72,10 @@ urlpatterns = [
     path('section/<int:pk>/update/',
          SectionUpdate.as_view(),
          name='courseinfo_section_update_urlpattern'),
+
+    path('section/<int:pk>/delete/',
+         SectionDelete.as_view(),
+         name='courseinfo_section_delete_urlpattern'),
 
     path('course/',
          CourseList.as_view(),
@@ -79,6 +93,10 @@ urlpatterns = [
          CourseUpdate.as_view(),
          name='courseinfo_course_update_urlpattern'),
 
+    path('course/<int:pk>/delete/',
+         CourseDelete.as_view(),
+         name='courseinfo_course_delete_urlpattern'),
+
     path('semester/',
          SemesterList.as_view(),
          name='courseinfo_semester_list_urlpattern'),
@@ -94,6 +112,10 @@ urlpatterns = [
     path('semester/<int:pk>/update/',
          SemesterUpdate.as_view(),
          name='courseinfo_semester_update_urlpattern'),
+
+    path('semester/<int:pk>/delete/',
+         SemesterDelete.as_view(),
+         name='courseinfo_semester_delete_urlpattern'),
 
     path('student/',
          StudentList.as_view(),
@@ -111,6 +133,10 @@ urlpatterns = [
          StudentUpdate.as_view(),
          name='courseinfo_student_update_urlpattern'),
 
+    path('student/<int:pk>/delete/',
+         StudentDelete.as_view(),
+         name='courseinfo_student_delete_urlpattern'),
+
     path('registration/',
          RegistrationList.as_view(),
          name='courseinfo_registration_list_urlpattern'),
@@ -126,5 +152,9 @@ urlpatterns = [
     path('registration/<int:pk>/update/',
          RegistrationUpdate.as_view(),
          name='courseinfo_registration_update_urlpattern'),
+
+    path('registration/<int:pk>/delete/',
+         RegistrationDelete.as_view(),
+         name='courseinfo_registration_delete_urlpattern'),
 
 ]
