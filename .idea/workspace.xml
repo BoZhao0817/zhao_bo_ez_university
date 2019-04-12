@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d923c52-2194-4b8e-a09e-b2a3ebe3f974" name="Default Changelist" comment="migration, before test, to store the db">
+    <list default="true" id="7d923c52-2194-4b8e-a09e-b2a3ebe3f974" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseinfo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseinfo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseinfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseinfo/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courseinfo/instructor_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courseinfo/instructor_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/courseinfo/student_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/courseinfo/student_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +46,7 @@
     <session id="1135519811">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="10" />
@@ -80,7 +75,7 @@
           <entry key="html" value="2889" />
           <entry key="py" value="11177" />
           <entry key="py@zhao_bo_ez_university" value="866" />
-          <entry key="txt" value="222" />
+          <entry key="txt" value="244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -88,7 +83,7 @@
           <entry key="CommandLine" value="820" />
           <entry key="DjangoUrlPath" value="1" />
           <entry key="HTML" value="2889" />
-          <entry key="PLAIN_TEXT" value="303" />
+          <entry key="PLAIN_TEXT" value="325" />
           <entry key="Python" value="11176" />
         </counts>
       </usages-collector>
@@ -102,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courseinfo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="514" column="31" selection-start-line="514" selection-start-column="31" selection-end-line="514" selection-end-column="31" />
+            <state relative-caret-position="7590">
+              <caret line="506" column="27" lean-forward="true" selection-start-line="506" selection-start-column="27" selection-end-line="506" selection-end-column="27" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
                 <marker date="1555037346338" expanded="true" signature="3481:5393" ph="..." />
@@ -386,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554952877770</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="migration, before test, to store the db">
+      <created>1555037374546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555037374546</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -441,7 +443,8 @@
     <MESSAGE value="finish link pages assignment" />
     <MESSAGE value="form assignment video 0 1 2" />
     <MESSAGE value="migration, before test, to store the db" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration, before test, to store the db" />
+    <MESSAGE value="pagination complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination complete" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/courseinfo/registration_form_update.html">
@@ -778,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseinfo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="514" column="31" selection-start-line="514" selection-start-column="31" selection-end-line="514" selection-end-column="31" />
+        <state relative-caret-position="7590">
+          <caret line="506" column="27" lean-forward="true" selection-start-line="506" selection-start-column="27" selection-end-line="506" selection-end-column="27" />
           <folding>
             <element signature="e#0#72#0" expanded="true" />
             <marker date="1555037346338" expanded="true" signature="3481:5393" ph="..." />
