@@ -56,7 +56,7 @@ class Semester(models.Model):
         unique_together = ('year', 'period')  #fk
 
 
-2
+
 class Course(models.Model):
     course_id = models.AutoField(primary_key=True)
     course_number = models.CharField(max_length=20)
@@ -163,7 +163,7 @@ class Section(models.Model):
     #why related name = sections view the object? other side?
 
     def __str__(self):
-        return '%s - %s (%s)' % (self.course.course_number, self.section_name, self.semester.semester_name)
+        return '%s - %s (%s)' % (self.course.course_number, self.section_name, self.semester.__str__())
 
     def get_absolute_url(self):
         return reverse('courseinfo_section_detail_urlpattern',
