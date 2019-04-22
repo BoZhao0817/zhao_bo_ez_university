@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d923c52-2194-4b8e-a09e-b2a3ebe3f974" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zhao_bo_ez_university/requirements/base" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhao_bo_ez_university/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhao_bo_ez_university/settings/development.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zhao_bo_ez_university/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zhao_bo_ez_university.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zhao_bo_ez_university.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_copy_of_db/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhao_bo_ez_university/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhao_bo_ez_university/settings/base.py" afterDir="false" />
+    <list default="true" id="7d923c52-2194-4b8e-a09e-b2a3ebe3f974" name="Default Changelist" comment="before doing the deployment">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +59,7 @@
         <counts>
           <entry key="base" value="1" />
           <entry key="css" value="4" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="149" />
           <entry key="png" value="1" />
           <entry key="py" value="127" />
@@ -79,18 +72,18 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="149" />
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="28" />
-          <entry key="gitignore" value="11" />
+          <entry key="gitignore" value="22" />
           <entry key="html" value="3406" />
           <entry key="py" value="12458" />
           <entry key="py@zhao_bo_ez_university" value="1019" />
-          <entry key="txt" value="257" />
+          <entry key="txt" value="284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -98,7 +91,7 @@
           <entry key="CommandLine" value="967" />
           <entry key="DjangoUrlPath" value="1" />
           <entry key="HTML" value="3406" />
-          <entry key="PLAIN_TEXT" value="348" />
+          <entry key="PLAIN_TEXT" value="386" />
           <entry key="Python" value="12457" />
         </counts>
       </usages-collector>
@@ -121,11 +114,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhao_bo_ez_university/requirements/base">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -184,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/courseinfo/section_refuse_delete.html" />
         <option value="$PROJECT_DIR$/templates/courseinfo/course_detail.html" />
         <option value="$PROJECT_DIR$/templates/courseinfo/semester_confirm_delete.html" />
         <option value="$PROJECT_DIR$/templates/courseinfo/semester_refuse_delete.html" />
@@ -235,6 +236,7 @@
         <option value="$PROJECT_DIR$/zhao_bo_ez_university/settings/production.py" />
         <option value="$PROJECT_DIR$/zhao_bo_ez_university/settings/base.py" />
         <option value="$PROJECT_DIR$/zhao_bo_ez_university/requirements/base" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -564,9 +566,6 @@
     <entry file="file://$USER_HOME$/Downloads/staticfiles_starter_files/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhao_bo_ez_university/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -772,6 +771,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
